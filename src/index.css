@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .my-checkbox {
+    @apply appearance-none w-3 h-3 bg-white border rounded-full checked:bg-pink-500 cursor-pointer;
+  }
+
+  .input-field {
+    @apply w-max font-truculenta font-medium text-base outline-none bg-transparent border-b-[1.5px] border-white;
+  }
+}
+
+@layer utilities {
+  .tasklist {
+    @apply flex justify-between items-center;
+  }
+
+  .tasklist-child {
+    @apply flex items-center gap-2;
+  }
+}
